@@ -16,6 +16,7 @@
 		FDD47F80280ADE09007F6014 /* ReusableComponentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD47F7F280ADE09007F6014 /* ReusableComponentTests.swift */; };
 		FDD47F8A280ADE09007F6014 /* ReusableComponentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD47F89280ADE09007F6014 /* ReusableComponentUITests.swift */; };
 		FDD47F8C280ADE09007F6014 /* ReusableComponentUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD47F8B280ADE09007F6014 /* ReusableComponentUITestsLaunchTests.swift */; };
+		FDD47F9B280ADF3C007F6014 /* TextFildeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD47F98280ADF2C007F6014 /* TextFildeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		FDD47F85280ADE09007F6014 /* ReusableComponentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReusableComponentUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDD47F89280ADE09007F6014 /* ReusableComponentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableComponentUITests.swift; sourceTree = "<group>"; };
 		FDD47F8B280ADE09007F6014 /* ReusableComponentUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableComponentUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FDD47F98280ADF2C007F6014 /* TextFildeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFildeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				FDD47F68280ADE07007F6014 /* AppDelegate.swift */,
 				FDD47F6A280ADE07007F6014 /* SceneDelegate.swift */,
 				FDD47F6C280ADE07007F6014 /* ViewController.swift */,
+				FDD47F98280ADF2C007F6014 /* TextFildeView.swift */,
 				FDD47F6E280ADE08007F6014 /* Main.storyboard */,
 				FDD47F71280ADE08007F6014 /* Assets.xcassets */,
 				FDD47F73280ADE08007F6014 /* LaunchScreen.storyboard */,
@@ -189,7 +192,7 @@
 		FDD47F5D280ADE07007F6014 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				BuildIndependentTargetsInParallel = 1;
+				BuildIndependentTargetsInParallel = NO;
 				LastSwiftUpdateCheck = 1330;
 				LastUpgradeCheck = 1330;
 				TargetAttributes = {
@@ -198,7 +201,6 @@
 					};
 					FDD47F7A280ADE09007F6014 = {
 						CreatedOnToolsVersion = 13.3;
-						TestTargetID = FDD47F64280ADE07007F6014;
 					};
 					FDD47F84280ADE09007F6014 = {
 						CreatedOnToolsVersion = 13.3;
@@ -260,6 +262,7 @@
 			files = (
 				FDD47F6D280ADE07007F6014 /* ViewController.swift in Sources */,
 				FDD47F69280ADE07007F6014 /* AppDelegate.swift in Sources */,
+				FDD47F9B280ADF3C007F6014 /* TextFildeView.swift in Sources */,
 				FDD47F6B280ADE07007F6014 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -488,7 +491,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -499,7 +501,6 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ReusableComponent.app/ReusableComponent";
 			};
 			name = Debug;
 		};
@@ -507,7 +508,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -518,7 +518,6 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ReusableComponent.app/ReusableComponent";
 			};
 			name = Release;
 		};
